@@ -6,7 +6,7 @@
 /*   By: rilliano <rilliano@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 00:04:03 by rilliano          #+#    #+#             */
-/*   Updated: 2024/12/09 00:04:04 by rilliano         ###   ########.fr       */
+/*   Updated: 2024/12/14 17:22:35 by rilliano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,10 @@ public:
     Fixed operator/(const Fixed &other) const;
 
     // Increment/Decrement operators
-    Fixed &operator++(); // Pre-increment
-    Fixed operator++(int); // Post-increment
-    Fixed &operator--(); // Pre-decrement
-    Fixed operator--(int); // Post-decrement
+    Fixed &operator++();
+    Fixed operator++(int);
+    Fixed &operator--();
+    Fixed operator--(int);
 
     // Static member functions
     static Fixed &min(Fixed &a, Fixed &b);
@@ -62,4 +62,4 @@ public:
 
 std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
 
-#endif // FIXED_HPP
+#endif
